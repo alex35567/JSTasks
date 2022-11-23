@@ -67,7 +67,8 @@ console.log(isHtml(path2));
 text='Создайте функцию которая в качестве аргумента принимает целое число, и проверяет четное оно или нет. Затем создайте произвольный массив целых чисел. И используя функцию проверки числа на четность, создайте из готового массива новый, который будет содержать только четные числа. Результат выведите в консоль.';
 
 const mixedArray = [3,13,74,14,66,15,22,4];
-const isEven = num => { if (num%2>0) return false; else return true };
+// const isEven = num => { if (num%2>0) return false; else return true };
+const isEven = num =>  num % 2 > 0;
 
 function filterArray(arr, func_even){
      let res = [];

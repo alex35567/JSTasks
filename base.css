@@ -1,0 +1,90 @@
+
+
+html {    
+    font-size: 16px;    
+}
+
+/* Базовый размер для страницы от высоты окна */
+html, body{
+    height: 100%;
+}
+
+
+
+/* Запрет дочернему компроненту выходить за рамки наружного */
+*, ::before, ::after {
+    box-sizing:  border-box;
+}
+
+
+/* Удаление лишних отступов в заголовках и параграфах */
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Задание стилей заголовков для сайта */
+h1 {
+    font-size: calc( 48px/16px * 1rem);
+    line-height: 1.08;
+}
+
+h2 {
+    font-size: calc( 48px/16px * 1rem);
+    line-height: 1.08;
+}
+
+h3 {
+    font-size: calc( 24px/16px * 1rem);
+}
+
+/* Обычный стиль для поля адреса */
+address {
+    font-style: normal;
+}
+
+/* Удаление форматирования ссылок по умолчанию */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Удаление лишних отступов */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none; 
+}
+
+/* Автоподстройка картинки по центру родительского элемента */
+img {
+    max-width: 100%;    
+    height: auto;
+}
+
+/* Отображение кнпки как ссылки */
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Отображение таблицы в привычном виде */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+body {                
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
