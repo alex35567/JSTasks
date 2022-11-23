@@ -1,10 +1,14 @@
 
     let list = document.querySelector('ul');
-    let list_elem = document.querySelector('li');
+    let list_elem = document.querySelector('li');        
+    
+    let width = parseInt(getComputedStyle(document.querySelector('.carusel__item'),null).width,10);   
+    let view_width = parseInt(getComputedStyle(document.querySelector('.carusel'),null).width,10);
+
+    let view_count = view_width/width;
+    let all_elem_count = list.children.length;
+
     let pos = 0;
-    let width = 50;
-    let view_count = 3;
-    let all_elem_count = 7;
 
       document.querySelector('#prev').onclick = function(event) {        
         pos += width;
