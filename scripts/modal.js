@@ -35,8 +35,10 @@ function modal(selector, text){
 
         let left_modal = (document.documentElement.clientWidth/2 - newItem.offsetWidth/2)/document.documentElement.clientWidth*100;
 
-        newItem.style.left=left_modal.toString()+'%';
-
+        newItem.style.left='50%';
+        newItem.style.marginRight='-50%';
+        newItem.style.transform='translate(-50%, -50%)';
+        
         newItem.style.borderRadius="10%";
         newItem.style.padding="10px 10px";
         newItem.style.height="10%";
