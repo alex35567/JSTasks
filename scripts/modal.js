@@ -33,9 +33,9 @@ function modal(selector, text){
         newItem.style.position="absolute";    
         newItem.style.top="50%";
 
-        let left_modal = document.documentElement.clientWidth/2 - newItem.offsetWidth/2;
+        let left_modal = (document.documentElement.clientWidth/2 - newItem.offsetWidth/2)/document.documentElement.clientWidth*100;
 
-        newItem.style.left=left_modal.toString()+'px';
+        newItem.style.left=left_modal.toString()+'%';
 
         newItem.style.borderRadius="10%";
         newItem.style.padding="10px 10px";
