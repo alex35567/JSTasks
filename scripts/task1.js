@@ -74,7 +74,7 @@ function filterArray(arr, func_even){
      let res = [];
     for(let i=0; i<arr.length;i++) {
         if(func_even(arr[i]))
-             res[res.length]=arr[i];
+             res.push(arr[i]);
             //  console.log(res);
     }
     return res;
