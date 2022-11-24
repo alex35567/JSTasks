@@ -1,5 +1,5 @@
 
-parent=document.querySelector('.btn');
+parent=document.querySelector('.btn-push');
 parent.addEventListener('click', modal(parent,'Модальное окно'));
 
 
