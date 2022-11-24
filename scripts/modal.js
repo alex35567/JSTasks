@@ -32,13 +32,13 @@ function modal(selector, text){
         
         newItem.style.position="absolute";    
         newItem.style.top="50%";
-        
+
         let left_modal = document.documentElement.clientWidth/2 - newItem.offsetWidth/2;
 
         newItem.style.left=left_modal.toString()+'px';
 
         newItem.style.borderRadius="10%";
-        newItem.style.padding="10px 0px";
+        newItem.style.padding="10px 10px";
         newItem.style.height="10%";
         newItem.style.border="2px solid green";
         newItem.style.backgroundColor="black";
