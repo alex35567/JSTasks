@@ -17,7 +17,7 @@ function modal(selector, text){
         if (selector !== e.target) return;
         overlay = document.createElement('div');
         selector.appendChild(overlay);  
-        overlay.style.position="absolute";    
+        overlay.style.position="fixed";    
         overlay.style.top="0";    
         overlay.style.bottom="0";
         overlay.style.left="0";
