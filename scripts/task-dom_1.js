@@ -13,8 +13,7 @@
       document.querySelector('#prev').onclick = function(event) {        
         pos += width;
         if (pos>=0)pos=0;                
-        list.style.transition = '  0.5s';
-        // list.style.marginLeft = pos + 'px';        
+        list.style.transition = '  0.5s';             
         list.style.marginLeft = pos + 'px';        
         event.preventDefault();
       };

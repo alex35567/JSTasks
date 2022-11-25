@@ -21,12 +21,16 @@ function modal(selector, text){
         overlay.style.top="0";    
         overlay.style.bottom="0";
         overlay.style.left="0";
-        overlay.style.right="0";
-        overlay.style.opacity="0.4";
-        overlay.style.backgroundColor="black";
+        overlay.style.right="0";        
+        // overlay.style.opacity="0.4";
+        overlay.style.backgroundColor="rgba(00, 00, 00, .2)";
+        overlay.style.display="flex";
+        overlay.style.alignItems="center";
+        overlay.style.justifyContent="center";
 
         newItem = document.createElement('div');
-        selector.appendChild(newItem);        
+        // selector.appendChild(newItem);        
+        overlay.appendChild(newItem);        
         // newItem.classList.add('modal');
         newItem.textContent = text;
         
@@ -35,10 +39,9 @@ function modal(selector, text){
 
         let left_modal = (document.documentElement.clientWidth/2 - newItem.offsetWidth/2)/document.documentElement.clientWidth*100;
 
-        newItem.style.left='50%';
-        newItem.style.marginRight='-50%';
-        newItem.style.transform='translate(-50%, -50%)';
-        
+        // newItem.style.left='50%';
+        // newItem.style.marginRight='-50%';
+        // newItem.style.transform='translate(-50%, -50%)';        
         newItem.style.borderRadius="10%";
         newItem.style.padding="10px 10px";
         newItem.style.height="10%";
